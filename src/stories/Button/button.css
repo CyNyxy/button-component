@@ -1,0 +1,15 @@
+.button {
+  background-color: #5435fe;
+  padding: 8px 16px;
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.secondary {
+  background-color: #fe8743;
+}
+
+.tertiary {
+  background-color: #a3ff95;
+}
