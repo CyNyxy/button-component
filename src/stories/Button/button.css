@@ -1,15 +1,124 @@
 .button {
-  background-color: #5435fe;
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: .875rem;
+  color: #3F3F3F;
+  background-color: #E0E0E0;
   padding: 8px 16px;
   border: transparent;
-  border-radius: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
   cursor: pointer;
 }
 
-.secondary {
-  background-color: #fe8743;
+.button:hover, .button:focus {
+  background-color: #AEAEAE;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0039CB;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: #1C313A;
+}
+.btn-danger:hover, .btn-danger:focus {
+  background-color: #9A0007;
 }
 
-.tertiary {
-  background-color: #a3ff95;
+.btn-primary {
+  color: #fff;
+  background-color: #2962FF;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #455A64;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #D32F2F;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 10px 16px;
+}
+.btn-md {
+  font-size: 14px;
+  padding: 11px 22px;
+}
+.btn-lg {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+/* .storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+} */
+
+.btn-outline {
+  color: #E0E0E0;
+  border-color: #E0E0E0;
+  box-shadow: #E0E0E0;
+  background-color: transparent;
+}
+
+.btn-outline:hover, .btn-outline:focus{
+  background: #AEAEAE;
+}
+
+.btn-text {
+  color: #E0E0E0;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: 0px 2px 3px transparent;
+}
+
+.btn-text:hover, .btn-text:focus{
+  background:  #AEAEAE;
+  border-color:  #AEAEAE;
+}
+
+.btn-disabled {
+  background: #E0E0E0;
+  border-color: #E0E0E0;
+  color: #9E9E9E;
+  cursor: unset;
+  box-shadow: unset;
+}
+
+.btn-disabled:hover, .btn-disabled:focus {
+  background-color: #E0E0E0;
+}
+
+.btn-outline-disabled {
+  color: #9E9E9E;
+  border-color: #9E9E9E;
+  box-shadow: unset;
+  background-color: transparent;
+  cursor: unset;
+}
+
+.btn-outline-disabled:hover, .btn-outline-disabled:focus {
+  background: transparent;
+}
+
+.btn-text-disabled {
+  color: #9E9E9E;
+  border-color: transparent;
+  box-shadow: unset;
+  background-color: transparent;
+  cursor: unset;
+}
+
+.btn-text-disabled:hover, .btn-text-disabled:focus {
+  background: transparent;
+  border-color: transparent;
 }

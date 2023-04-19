@@ -2,24 +2,34 @@ import React from "react";
 import PropTypes from 'prop-types';
 import "./button.css"
 
-const getStyles = (...args) => ["button", ...args].filter(Boolean).join(" ")
+// const getStyles = (...args) => ["button", "btn-${size}", ...args].filter(Boolean).join(" ")
+// <button className={getStyles(color)}>
 
-const Button = ({ children, type }) => {
+function Button({ label, size, color, iconStart, iconEnd, variant, ...props }) {
+
   return (
-    <button className={getStyles(type)}>
-      {children}
+    <button className={['button', `btn-${size}`, `btn-${color}`, `btn-${variant}`].join(' ')} {...props}>
+      {iconStart && <span className="material-icons-round">{iconStart}</span>}
+      {label}
+      {iconEnd && <span className="material-icons-round">{iconEnd}</span>}
     </button>
   );
-};
+}
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["primary", "secondary", "tertiary"]),
+  label: PropTypes.string.isRequired,
+  color: PropTypes.oneOf(["default", "primary", "secondary", "danger"]),
+  size: PropTypes.oneOf(["sm", "md", "lg"]).isRequired,
+  iconStart: PropTypes.string,
+  iconEnd: PropTypes.string,
+  variant: PropTypes.oneOf(["default", "outline", "text"]).isRequired,
 };
 
 Button.defaultProps = {
-  children: "Hello",
-  type: "primary",
+  label: "Default",
+  color: "default",
+  size: "md",
+  variant: "default",
 };
 
 export default Button;
