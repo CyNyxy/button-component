@@ -1,0 +1,37 @@
+.material-icons-round {
+  font-family: 'Material Icons Round';
+  color: var(--button-color);
+}
+
+.material-icons-round--variant{
+  color: var(--button-background);
+}
+
+/*PRIMARY COLOR*/
+.icon--color-primary.material-icons-round{
+  color: var(--button-color-primary);
+}
+.icon--color-primary.material-icons-round--variant{
+  color: var(--button-background-primary);
+}
+
+/*SECONDARY COLOR*/
+.icon--color-secondary.material-icons-round{
+  color: var(--button-color-secondary);
+}
+.icon--color-secondary.material-icons-round--variant{
+  color: var(--button-background-secondary);
+}
+
+/*DANGER COLOR*/
+.icon--color-danger.material-icons-round{
+  color: var(--button-color-danger);
+}
+.icon--color-danger.material-icons-round--variant{
+  color: var(--button-background-danger);
+}
+
+/*DISABLED*/
+.material-icons-round--disabled{
+  color: var(--button-disabled-color);
+}

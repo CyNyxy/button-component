@@ -8,9 +8,9 @@ export default {
     label: "Default",
     size: "md",
     color: "default",
-    iconStart: "",
-    iconEnd: "",
-    variant: "",
+    variant: "default",
+    disableShadow: false, 
+    disabled: false,
     },
 };
 
@@ -20,25 +20,46 @@ export const Small = Template.bind({});
 Small.args = {
   size: "sm",
 }
+export const Medium = Template.bind({});
+Medium.args = {
+  size: "md",
+}
 export const Large = Template.bind({});
 Large.args = {
   size: "lg",
 }
 
-export const Default = Template.bind({});
-
 export const Primary = Template.bind({});
 Primary.args = {
   color: "primary",
-  iconStart: "add",
 }
-
 export const Secondary = Template.bind({});
 Secondary.args = {
   color: "secondary",
 }
-
-export const Tertiary = Template.bind({});
-Tertiary.args = {
+export const Danger = Template.bind({});
+Danger.args = {
   color: "danger",
+}
+
+export const Outline = Template.bind({});
+Outline.args = {
+  variant: "outline",
+}
+export const Text = Template.bind({});
+Text.args = {
+  variant: "text",
+}
+export const Noshadow = Template.bind({});
+Noshadow.args = {
+  disableShadow: true,
+}
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
+}
+
+export const Icon = Template.bind({});
+Icon.args = {
+  iconStart: "add_shopping_cart",
 }
