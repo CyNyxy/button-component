@@ -16,11 +16,5 @@ const config = {
   core: {
     builder: '@storybook/builder-vite',
   },
-  async viteFinal(config, { configType }) {
-    if (configType === 'PRODUCTION') {
-      config.build.sourcemap = false;
-    }
-    return config;
-  }
 };
 export default config;
